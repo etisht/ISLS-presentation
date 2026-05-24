@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Teacher Engagement in Online Micro-Credential PD – ISLS 2025</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+</head>
+<body>
+
+<div id="progress-bar"></div>
+
+<nav class="sticky-nav" id="sticky-nav">
+  <a href="#s1" title="Title"></a>
+  <a href="#s2" title="Motivation"></a>
+  <a href="#s3" title="Theory"></a>
+  <a href="#s4" title="RQs"></a>
+  <a href="#s5" title="Data"></a>
+  <a href="#s6" title="Method"></a>
+  <a href="#s7" title="Finding 1"></a>
+  <a href="#s8" title="Finding 2"></a>
+  <a href="#s9" title="Finding 3"></a>
+  <a href="#s10" title="Discussion"></a>
+  <a href="#s11" title="Implications"></a>
+  <a href="#s12" title="Conclusion"></a>
+</nav>
+
+<!-- ═══════════════════════════════════════════════════════════════════════ -->
+<!-- 1 · TITLE                                                              -->
+<!-- ═══════════════════════════════════════════════════════════════════════ -->
+<section class="sec-title" id="s1" style="position:relative;padding-left:48px;background-image:url('bg-title.png');background-size:cover;background-position:center;">
+  <div class="title-accent-bar"></div>
+  <div class="inner" style="gap:24px;">
+    <div class="title-tag fade-in">ISLS 2025 · Learning Sciences Conference</div>
+    <h1 class="title-headline fade-in">
+      Teacher Engagement<br>in Online <span>Micro-Credential</span><br>Professional Development
+    </h1>
+    <div class="title-authors fade-in">
+      <strong>Ester Steingart</strong> · Laila Sliman · Linor L. Hadar · Tsafrir Goldberg<br>
+      University of Haifa &nbsp;|&nbsp; <strong>Arnon Hershkovitz</strong> · Tel Aviv University
+    </div>
+    <div class="title-meta fade-in">
+      <span class="title-badge">Learning Analytics</span>
+      <span class="title-badge">Teacher Professional Development</span>
+      <span class="title-badge">Micro-Credentials</span>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════════════ -->
+<!-- 2 · MOTIVATION                                                         -->
+<!-- ═══════════════════════════════════════════════════════════════════════ -->
+<section class="sec-white" id="s2">
+  <div class="inner">
+    <div class="section-label fade-in">Motivation</div>
+    <h2 class="slide-heading fade-in">Micro-credentials are scaling.<br>Our understanding of engagement is not.</h2>
+
+    <p class="mot-intro fade-in">Platforms know who logged in and who completed — but they rarely reveal <strong>how</strong> teachers engaged, what patterns emerged, and which learning processes actually unfolded.</p>
+
+    <!-- Three-column comparison -->
+    <div class="mot-compare fade-in">
+
+      <!-- Left: what platforms measure -->
+      <div class="mot-card mot-card-surface">
+        <div class="mot-card-header">
+          <span class="mot-card-icon">📊</span>
+          <span class="mot-card-title">What platforms measure</span>
+          <span class="mot-card-sub">Current metrics</span>
+        </div>
+        <ul class="mot-list mot-list-surface">
+          <li><span class="mot-dot"></span>Logins</li>
+          <li><span class="mot-dot"></span>Completion rates</li>
+          <li><span class="mot-dot"></span>Course progress</li>
+          <li><span class="mot-dot"></span>Certificates earned</li>
+        </ul>
+      </div>
+
+      <!-- Middle: bridge -->
+      <div class="mot-bridge">
+        <div class="mot-bridge-line"></div>
+        <div class="mot-bridge-label">These metrics show<br><strong>participation</strong><br>— not learning<br>engagement</div>
+        <div class="mot-bridge-arrow">→</div>
+      </div>
+
+      <!-- Right: what actually matters -->
+      <div class="mot-card mot-card-deep">
+        <div class="mot-card-header">
+          <span class="mot-card-icon">🔍</span>
+          <span class="mot-card-title">What remains hidden</span>
+          <span class="mot-card-sub">Actual engagement</span>
+        </div>
+        <ul class="mot-list mot-list-deep">
+          <li><span class="mot-dot"></span>Cognitive effort</li>
+          <li><span class="mot-dot"></span>Discussion patterns</li>
+          <li><span class="mot-dot"></span>Return behavior</li>
+          <li><span class="mot-dot"></span>Social interaction</li>
+          <li><span class="mot-dot"></span>Knowledge construction</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Research Gap bottom bar -->
+    <div class="mot-gap fade-in">
+      <div class="mot-gap-left">
+        <span class="mot-gap-label">Research Gap</span>
+        <p>There is still no data-driven conceptualization of multidimensional engagement in national micro-credential platforms.</p>
+      </div>
+      <div class="mot-gap-right">
+        <span class="mot-gap-platform">Hakaveret case</span>
+        <div class="mot-gap-stats">
+          <span><strong>839</strong> courses</span>
+          <span class="mot-gap-dot">·</span>
+          <span><strong>46,000+</strong> enrollments</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════════════ -->
+<!-- 3 · THEORETICAL FRAMEWORK                                              -->
+<!-- ═══════════════════════════════════════════════════════════════════════ -->
+<section class="sec-light" id="s3">
+  <div class="inner">
+    <div class="section-label fade-in">Theoretical Framework</div>
+    <h2 class="slide-heading fade-in">Engagement is multidimensional — and measurable from data</h2>
+
+    <div class="theory-cards fade-in">
+      <div class="theory-card">
+        <div class="theory-icon">🧑‍🏫</div>
+        <div class="theory-body">
+          <div class="theory-title">Adult Learning Theory <span class="theory-cite">(Knowles, 2013)</span></div>
+          <div class="theory-text">Teachers are self-directed learners driven by autonomy, relevance, and experience — online platforms must support this</div>
+        </div>
+      </div>
+      <div class="theory-card">
+        <div class="theory-icon">📐</div>
+        <div class="theory-body">
+          <div class="theory-title">Multidimensional Engagement <span class="theory-cite">(Finn &amp; Zimmer, 2012)</span></div>
+          <div class="theory-text">Engagement = <strong>cognitive</strong> (investment) + <strong>behavioral</strong> (actions) + <strong>emotional</strong> (affect) + <strong>social</strong> (interaction)</div>
+        </div>
+      </div>
+      <div class="theory-card">
+        <div class="theory-icon">📉</div>
+        <div class="theory-body">
+          <div class="theory-title">The Proxy Problem <span class="theory-cite">(Hershkovitz et al., 2025)</span></div>
+          <div class="theory-text">Prior work over-relies on click counts and logins — behavioral proxies that <strong>do not reflect genuine learning</strong></div>
+        </div>
+      </div>
+      <div class="theory-card theory-card-highlight">
+        <div class="theory-icon">🔬</div>
+        <div class="theory-body">
+          <div class="theory-title">Learning Analytics as Solution</div>
+          <div class="theory-text">Digital trace data can <strong>empirically reveal hidden engagement dimensions</strong> — moving beyond surface metrics to model the true structure of participation</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════════════ -->
+<!-- 4 · RESEARCH QUESTIONS                                                 -->
+<!-- ═══════════════════════════════════════════════════════════════════════ -->
+<section class="sec-white" id="s4">
+  <div class="inner">
+    <div class="section-label fade-in">Research Questions</div>
+    <h2 class="slide-heading fade-in">Three questions, one integrated study</h2>
+
+    <div class="rq-list fade-in">
+      <div class="rq-item">
+        <span class="rq-num">RQ1</span>
+        <span class="rq-text">What <strong>latent dimensions</strong> of teacher engagement are reflected in digital trace data?</span>
+      </div>
+      <div class="rq-item">
+        <span class="rq-num">RQ2</span>
+        <span class="rq-text">To what extent do engagement dimensions <strong>predict learning outcomes</strong> — course completion, activity completion, and practical application?</span>
+      </div>
+      <div class="rq-item">
+        <span class="rq-num">RQ3</span>
+        <span class="rq-text">What distinct <strong>profiles of teacher engagement</strong> emerge from the data, and what are their characteristics?</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════════════ -->
+<!-- 5 · STUDY CONTEXT & DATA                                               -->
+<!-- ═══════════════════════════════════════════════════════════════════════ -->
+<section class="sec-light" id="s5">
+  <div class="inner">
+    <div class="section-label fade-in">Study Context &amp; Data</div>
+    <h2 class="slide-heading fade-in">"Hakaveret" — Israel's national micro-credential platform</h2>
+
+    <div class="stat-cards fade-in">
+      <div class="stat-card"><span class="stat-number">5,271</span><span class="stat-label">teacher records</span></div>
+      <div class="stat-card"><span class="stat-number">8</span><span class="stat-label">courses analyzed</span></div>
+      <div class="stat-card"><span class="stat-number">2021–25</span><span class="stat-label">data span</span></div>
+      <div class="stat-card"><span class="stat-number">~3h</span><span class="stat-label">per course (equiv.)</span></div>
+    </div>
+
+    <div class="two-col fade-in">
+      <div>
+        <p style="font-weight:700;color:var(--navy);margin-bottom:12px;font-family:'Inter',sans-serif;font-size:16px;">Engagement Behavior Variables</p>
+        <ul class="bullet-list">
+          <li><strong>Forum:</strong> comments, word count in posts (×2 forums)</li>
+          <li><strong>Quiz:</strong> number of attempts, first-attempt score, attempt duration</li>
+          <li><strong>Effort:</strong> learning duration (first → last log), task uploads, total log records</li>
+        </ul>
+      </div>
+      <div>
+        <p style="font-weight:700;color:var(--navy);margin-bottom:12px;font-family:'Inter',sans-serif;font-size:16px;">Outcome Variables</p>
+        <ul class="bullet-list">
+          <li><strong>Course completion</strong> (binary)</li>
+          <li><strong>Completed activities</strong> (count of requirements met)</li>
+          <li><strong>Practical application</strong> (classroom implementation ideas shared)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════════════ -->
+<!-- 6 · METHOD                                                             -->
+<!-- ═══════════════════════════════════════════════════════════════════════ -->
+<section class="sec-white" id="s6">
+  <div class="inner">
+    <div class="section-label fade-in">Analytical Approach</div>
+    <h2 class="slide-heading fade-in">Three-step multi-method analysis</h2>
+
+    <div class="method-steps fade-in" style="gap:28px;">
+      <div class="method-step">
+        <div class="method-num">Step 1</div>
+        <div class="method-name">Factor Analysis</div>
+        <div class="method-desc">Exploratory factor analysis with Promax rotation to uncover latent engagement dimensions from log-data indicators</div>
+        <span class="method-rq">RQ1</span>
+      </div>
+      <div class="method-step">
+        <div class="method-num">Step 2</div>
+        <div class="method-name">Regression Analysis</div>
+        <div class="method-desc">Logistic and linear regression using engagement factors as predictors of three learning outcome variables</div>
+        <span class="method-rq">RQ2</span>
+      </div>
+      <div class="method-step">
+        <div class="method-num">Step 3</div>
+        <div class="method-name">Cluster Analysis</div>
+        <div class="method-desc">Two-step cluster analysis on combined engagement patterns to identify distinct teacher profiles</div>
+        <span class="method-rq">RQ3</span>
+      </div>
+    </div>
+
+    <div class="callout callout-teal fade-in">
+      All behavioral variables standardized as Z-scores. Variables reflect log records, quiz behavior, forum participation, and learning duration.
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════════════ -->
+<!-- 7 · FINDING 1: THREE DIMENSIONS                                        -->
+<!-- ═══════════════════════════════════════════════════════════════════════ -->
+<section class="sec-light" id="s7">
+  <div class="inner">
+    <div class="section-label fade-in">Finding 1 · Factor Analysis</div>
+    <h2 class="slide-heading fade-in">Three latent dimensions explain 56% of variance</h2>
+
+    <div class="two-col fade-in">
+      <div style="display:flex;flex-direction:column;gap:14px;">
+        <div class="dim-card">
+          <div class="dim-icon forum">💬</div>
+          <div class="dim-body">
+            <div class="dim-name">Forum Activity</div>
+            <div class="dim-vars">Comments &amp; word count in forum posts</div>
+          </div>
+          <div class="dim-bar-wrap">
+            <div class="dim-pct">24.98%</div>
+            <div class="dim-bar forum" style="width:100%;"></div>
+          </div>
+        </div>
+        <div class="dim-card">
+          <div class="dim-icon quiz">📊</div>
+          <div class="dim-body">
+            <div class="dim-name">Quiz Performance</div>
+            <div class="dim-vars">Attempts (–) &amp; first-attempt score</div>
+          </div>
+          <div class="dim-bar-wrap">
+            <div class="dim-pct">19.99%</div>
+            <div class="dim-bar quiz" style="width:80%;"></div>
+          </div>
+        </div>
+        <div class="dim-card">
+          <div class="dim-icon effort">⏱️</div>
+          <div class="dim-body">
+            <div class="dim-name">Learning Effort</div>
+            <div class="dim-vars">Duration on platform, task uploads, quiz duration</div>
+          </div>
+          <div class="dim-bar-wrap">
+            <div class="dim-pct">11.03%</div>
+            <div class="dim-bar effort" style="width:44%;"></div>
+          </div>
+        </div>
+        <div class="callout" style="padding:14px 18px;font-size:15px;">
+          <strong>Model fit</strong>
+          KMO = 0.6 · Bartlett's χ²(45) = 2623 · p &lt; .001
+        </div>
+      </div>
+      <div class="chart-box-tall">
+        <canvas id="factorChart"></canvas>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════════════ -->
+<!-- 8 · FINDING 2: FORUM DOMINATES                                         -->
+<!-- ═══════════════════════════════════════════════════════════════════════ -->
+<section class="sec-white" id="s8">
+  <div class="inner">
+    <div class="section-label fade-in">Finding 2 · Regression Analysis</div>
+    <h2 class="slide-heading fade-in">Forum participation is the critical predictor</h2>
+
+    <div class="two-col fade-in">
+      <div style="display:flex;flex-direction:column;gap:18px;">
+        <div class="big-highlight">
+          <div class="num">15×</div>
+          <div class="unit">more likely to complete the course<br><span style="font-size:13px;opacity:0.6;">Forum Activity OR = 14.895, p &lt; .001</span></div>
+        </div>
+        <ul class="bullet-list">
+          <li><strong>Course completion:</strong> Model accuracy 89.6% → 95.4% (Nagelkerke R² = .41)</li>
+          <li><strong>Completed activities:</strong> Forum (β = .428) &gt;&gt; Learning Effort (β = .161) &gt;&gt; Quiz (ns)</li>
+          <li><strong>Practical application:</strong> Forum + Effort significant; Quiz not significant</li>
+          <li>Quiz performance = limited direct role across all three outcomes</li>
+        </ul>
+      </div>
+      <div class="chart-box-tall">
+        <canvas id="regressionChart"></canvas>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════════════ -->
+<!-- 9 · FINDING 3: THREE PROFILES                                          -->
+<!-- ═══════════════════════════════════════════════════════════════════════ -->
+<section class="sec-dark" id="s9">
+  <div class="inner">
+    <div class="section-label fade-in">Finding 3 · Cluster Analysis</div>
+    <h2 class="slide-heading fade-in">Three distinct teacher engagement profiles</h2>
+
+    <div class="profile-cards fade-in">
+      <div class="profile-card blue">
+        <div class="profile-name">🤝 Active Collaborators</div>
+        <div class="profile-subtitle">High discussion, average performance</div>
+        <div class="profile-tags">
+          <span class="profile-tag tag-up">↑ Forum activity (+1.01)</span>
+          <span class="profile-tag tag-up">↑ Learning duration (+1.11)</span>
+          <span class="profile-tag tag-neutral">≈ Quiz score (avg)</span>
+        </div>
+      </div>
+      <div class="profile-card orange">
+        <div class="profile-name">🏃 Struggling Strivers</div>
+        <div class="profile-subtitle">High effort, low achievement</div>
+        <div class="profile-tags">
+          <span class="profile-tag tag-up">↑↑ Log records (+0.88)</span>
+          <span class="profile-tag tag-up">↑↑ Learning duration (+1.92)</span>
+          <span class="profile-tag tag-down">↓ Quiz score (–0.75)</span>
+        </div>
+      </div>
+      <div class="profile-card green">
+        <div class="profile-name">⚡ Efficient Achievers</div>
+        <div class="profile-subtitle">Low activity, high performance</div>
+        <div class="profile-tags">
+          <span class="profile-tag tag-down">↓ Log records (lowest)</span>
+          <span class="profile-tag tag-down">↓ Forum activity (below avg)</span>
+          <span class="profile-tag tag-up">↑↑ Quiz score (+0.78)</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="chart-box fade-in" style="height:380px;">
+      <canvas id="clusterChart"></canvas>
+    </div>
+
+    <div class="callout fade-in" style="background:rgba(245,158,11,0.15);border-left-color:var(--amber);">
+      <strong style="color:var(--amber-light);">Key insight</strong>
+      <span style="color:rgba(255,255,255,0.9);font-size:18px;">Observable effort is <em>not</em> a reliable proxy for achievement — high-effort learners may still underperform without adequate support.</span>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════════════ -->
+<!-- 10 · DISCUSSION                                                        -->
+<!-- ═══════════════════════════════════════════════════════════════════════ -->
+<section class="sec-white" id="s10">
+  <div class="inner">
+    <div class="section-label fade-in">Discussion</div>
+    <h2 class="slide-heading fade-in">What do these patterns tell us?</h2>
+
+    <div class="two-col fade-in">
+      <ul class="slide-bullets">
+        <li><strong>Forum = social learning = completion.</strong> Discussion participation is the single strongest lever — far outweighing quiz performance</li>
+        <li><strong>"Efficient Achievers" bypass forums</strong> yet succeed — likely through prior expertise, offline reflection, or external resources</li>
+        <li><strong>"Struggling Strivers"</strong> invest significant time and effort but underperform → need <strong>adaptive scaffolding &amp; timely feedback</strong></li>
+        <li>Challenges adult learning theory's collaborative ideal: some high-achievers effectively withdraw from the learning community</li>
+      </ul>
+
+      <div style="display:flex;flex-direction:column;gap:16px;">
+        <div class="callout callout-teal">
+          <strong>Learning Sciences insight</strong>
+          Some important learning processes may occur <em>outside the logs</em> — offline reflection, prior knowledge activation — not visible in behavioral data.
+        </div>
+        <div class="callout">
+          <strong>Design challenge</strong>
+          How do we leverage forum participation without coercing it from learners who don't need it?
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════════════ -->
+<!-- 11 · IMPLICATIONS & FUTURE WORK                                        -->
+<!-- ═══════════════════════════════════════════════════════════════════════ -->
+<section class="sec-dark" id="s11">
+  <div class="inner">
+    <div class="section-label fade-in">Implications &amp; Next Steps</div>
+    <h2 class="slide-heading fade-in">What should we do with this?</h2>
+
+    <div class="impl-grid fade-in">
+      <div class="impl-card">
+        <div class="impl-card-title">🎓 Design Implications</div>
+        <ul>
+          <li>Prioritize meaningful discussion design in online TPD — it drives completion</li>
+          <li>Develop adaptive feedback loops for high-effort, low-achievement learners</li>
+          <li>Rethink completion metrics: move beyond activity counts toward quality of engagement</li>
+        </ul>
+      </div>
+      <div class="impl-card">
+        <div class="impl-card-title">🔭 Future Research</div>
+        <ul>
+          <li>Expand to the full Hakaveret dataset (839 courses) to test stability of the 3-factor structure</li>
+          <li>NLP analysis of forum content — measure <em>quality</em> of discourse, not just quantity</li>
+          <li>Multimodal learning analytics: self-reports + classroom observation</li>
+        </ul>
+      </div>
+      <div class="impl-card">
+        <div class="impl-card-title">📐 Methodological Contribution</div>
+        <ul>
+          <li>Replicable multi-method framework: factor analysis + regression + clustering</li>
+          <li>Moves beyond behavioral proxies to empirically grounded engagement dimensions</li>
+        </ul>
+      </div>
+      <div class="impl-card">
+        <div class="impl-card-title">⚠️ Limitations</div>
+        <ul>
+          <li>Initial stage — 8 courses from one platform</li>
+          <li>Behavioral trace data cannot fully capture cognitive or emotional engagement</li>
+          <li>Forum quantity ≠ forum quality</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════════════ -->
+<!-- 12 · CONCLUSION                                                        -->
+<!-- ═══════════════════════════════════════════════════════════════════════ -->
+<section class="sec-dark" id="s12">
+  <div class="inner">
+    <div class="section-label fade-in">Conclusion</div>
+    <h2 class="slide-heading fade-in">A data-driven picture of how teachers engage</h2>
+
+    <div class="conclusion-grid fade-in">
+      <div class="conclusion-item">
+        <div class="conclusion-item-title">Three Dimensions</div>
+        <div class="conclusion-item-text">Forum Activity, Quiz Performance, and Learning Effort are the empirically derived building blocks of teacher engagement in micro-credentials</div>
+      </div>
+      <div class="conclusion-item">
+        <div class="conclusion-item-title">Forum Drives Completion</div>
+        <div class="conclusion-item-text">Social participation in discussions is 15× more predictive of course completion than other engagement behaviors</div>
+      </div>
+      <div class="conclusion-item">
+        <div class="conclusion-item-title">Three Teacher Profiles</div>
+        <div class="conclusion-item-text">Active Collaborators, Struggling Strivers, and Efficient Achievers — each requiring different platform support and design responses</div>
+      </div>
+      <div class="conclusion-item">
+        <div class="conclusion-item-title">The Big Takeaway</div>
+        <div class="conclusion-item-text">Observable activity is not a reliable proxy for learning. Platform design must foster discussion, not just track clicks</div>
+      </div>
+    </div>
+
+    <div class="thanks-row fade-in">
+      <div>
+        <p style="color:var(--teal-light);font-family:'Inter',sans-serif;font-weight:700;font-size:18px;margin-bottom:6px;">Thank you!</p>
+        <p style="color:rgba(255,255,255,0.55);font-size:15px;">Questions &amp; discussion welcome</p>
+        <p style="color:rgba(255,255,255,0.4);font-size:14px;margin-top:6px;">etishtaingart@gmail.com</p>
+      </div>
+      <div style="text-align:right;">
+        <p style="color:rgba(255,255,255,0.3);font-size:13px;font-family:'Inter',sans-serif;">ISLS 2025</p>
+        <p style="color:rgba(255,255,255,0.3);font-size:13px;">University of Haifa · Tel Aviv University</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="charts.js"></script>
+<script>
+  // ── Progress bar ──────────────────────────────────────────────────────────
+  const bar = document.getElementById('progress-bar');
+  function updateProgress() {
+    const pct = (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
+    bar.style.width = Math.min(pct, 100) + '%';
+  }
+
+  // ── Sticky nav active state ───────────────────────────────────────────────
+  const sections = Array.from(document.querySelectorAll('section[id]'));
+  const navLinks = Array.from(document.querySelectorAll('.sticky-nav a'));
+
+  function updateNav() {
+    const mid = window.scrollY + window.innerHeight / 2;
+    let active = 0;
+    sections.forEach((sec, i) => {
+      if (sec.offsetTop <= mid) active = i;
+    });
+    navLinks.forEach((a, i) => a.classList.toggle('active', i === active));
+  }
+
+  // ── Fade-in on scroll ─────────────────────────────────────────────────────
+  const faders = document.querySelectorAll('.fade-in');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.1 });
+  faders.forEach(el => observer.observe(el));
+
+  // ── Chart init on visibility ──────────────────────────────────────────────
+  let chartsReady = false;
+  const chartObserver = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting && !chartsReady) {
+        chartsReady = true;
+        initCharts();
+      }
+    });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('canvas').forEach(c => chartObserver.observe(c));
+
+  window.addEventListener('scroll', () => { updateProgress(); updateNav(); }, { passive: true });
+  updateProgress(); updateNav();
+</script>
+</body>
+</html>
