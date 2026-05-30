@@ -23,6 +23,8 @@ body {
   font-family: 'Source Sans 3', sans-serif;
   background: #f1f5f9;
   color: var(--navy);
+  padding-top: 136px;
+  scroll-padding-top: 136px;
 }
 
 /* ─── Progress bar ─── */
@@ -126,23 +128,26 @@ section {
   width: 6px;
   background: linear-gradient(to bottom, var(--teal), var(--amber));
 }
-.title-logos {
-  position: absolute;
-  top: 28px; right: 36px;
+.logo-banner {
+  position: fixed;
+  top: 0; left: 0; right: 0;
   display: flex;
   align-items: center;
-  gap: 20px;
-  z-index: 2;
+  gap: 48px;
+  padding: 20px 56px;
+  background: #ffffff;
+  border-bottom: 1px solid var(--gray-200);
+  z-index: 900;
 }
-.title-logo {
-  height: 64px;
+.banner-logo {
   width: auto;
   object-fit: contain;
-  filter: brightness(0) invert(1);
-  opacity: 0.85;
 }
-.title-logo-isls {
-  height: 52px;
+.banner-logo-haifa {
+  height: 96px;
+}
+.banner-logo-isls {
+  height: 48px;
 }
 .title-tag {
   font-family: 'Inter', sans-serif;
@@ -445,6 +450,71 @@ section {
 .rq-text { font-size: 18px; color: var(--navy); line-height: 1.45; }
 .rq-text strong { color: var(--navy); font-weight: 700; }
 
+/* ─── Study Context cards ─── */
+.ctx-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1.2fr;
+  gap: 20px;
+  margin-top: 8px;
+}
+.ctx-card {
+  background: var(--white);
+  border: 1px solid var(--gray-200);
+  border-radius: 16px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.ctx-card-highlight {
+  background: linear-gradient(135deg, var(--navy), #1a3060);
+  border-color: var(--teal);
+  color: var(--white);
+}
+.ctx-icon { font-size: 28px; }
+.ctx-title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  color: var(--navy);
+}
+.ctx-card-highlight .ctx-title { color: var(--teal-light); }
+.ctx-text {
+  font-size: 15px;
+  color: var(--gray-600);
+  line-height: 1.6;
+}
+.ctx-card-highlight .ctx-text { color: rgba(255,255,255,0.8); }
+.ctx-cite { color: var(--gray-400); font-size: 13px; }
+.ctx-challenge {
+  font-size: 13.5px;
+  color: var(--amber);
+  background: rgba(245,158,11,0.08);
+  border-left: 3px solid var(--amber);
+  padding: 8px 12px;
+  border-radius: 0 8px 8px 0;
+  margin-top: auto;
+}
+.ctx-stats-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-size: 14px;
+  color: rgba(255,255,255,0.9);
+  margin-top: 4px;
+}
+.ctx-stats-row strong { color: var(--teal-light); font-size: 16px; }
+.ctx-dot { color: rgba(255,255,255,0.3); }
+.ctx-structure {
+  font-size: 13.5px;
+  color: rgba(255,255,255,0.7);
+  background: rgba(255,255,255,0.08);
+  padding: 8px 12px;
+  border-radius: 8px;
+  margin-top: auto;
+}
+.ctx-structure strong { color: var(--teal-light); }
+
 /* ─── Stat cards ─── */
 .stat-cards { display: flex; gap: 16px; flex-wrap: wrap; }
 .stat-card {
@@ -573,7 +643,7 @@ section {
   text-transform: uppercase; letter-spacing: 1px;
 }
 .impl-card ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
-.impl-card li { font-size: 16px; color: rgba(255,255,255,0.82); line-height: 1.4; display: flex; gap: 10px; }
+.impl-card li { font-size: 16px; color: rgba(255,255,255,0.82); line-height: 1.4; display: flex; gap: 10px; align-items: flex-start; text-align: left; }
 .impl-card li::before { content: '→'; color: var(--amber); font-weight: 700; flex-shrink: 0; }
 
 /* ─── Conclusion grid ─── */
