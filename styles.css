@@ -126,6 +126,24 @@ section {
   width: 6px;
   background: linear-gradient(to bottom, var(--teal), var(--amber));
 }
+.title-logos {
+  position: absolute;
+  top: 28px; right: 36px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  z-index: 2;
+}
+.title-logo {
+  height: 64px;
+  width: auto;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+  opacity: 0.85;
+}
+.title-logo-isls {
+  height: 52px;
+}
 .title-tag {
   font-family: 'Inter', sans-serif;
   font-size: 13px;
